@@ -59,9 +59,9 @@ Among various model configurations, the best Seq2Seq model had:
 ### Next Steps
 
 If more time were available, I would:
-- Engage with the business team to understand constraints and guide modeling choices.Understing the business constraints might simplify the tasks /
+- Engage with the business team to understand constraints and guide modeling choices.Understanding the business constraints might simplify the tasks .
 - Spend more time to design a better business metric that would reflect trade-offs in over-estimation vs under-estimation (OOS)
-- Understing the business constraints might simplify the tasks 
+- Fit the log-transformed signal instead of the raw signal
 - Explore seasonalities in depth using Fourier analysis.
 - Conduct extensive hyperparameter tuning on the seq2seq model , and try a transformer based architecture instead of GRUs.
 - Evaluate additional baselines and benchmarks.
