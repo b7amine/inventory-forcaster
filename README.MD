@@ -47,6 +47,8 @@ Among various model configurations, the best Seq2Seq model had:
 - 0.5 dropout
 - Attention and incremental encoder context updates
 - Inclusion of `current_level`
+- Previous observations and their corresponding positional encoding (cos,sin week_of_year) , allowing non consecutive observations to be fed + other benefits
+
 
 ### Key Findings (results_and_insights.ipynb)
 
