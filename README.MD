@@ -1,4 +1,4 @@
-# Inventory Forecasting Project
+# Inventory Forecasting Project POC
 
 ## Overview
 
