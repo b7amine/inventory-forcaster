@@ -1,16 +1,5 @@
 # Inventory Forecasting Project POC
 
-## Overview
-
-This project focuses on forecasting inventory levels using various modeling approaches, including a Seq2Seq architecture with attention mechanisms. I conducted exploratory data analysis, developed multiple models, and benchmarked them against simpler and more sophisticated baselines.
-
-### Preprocessing and Exploratory Analysis
-
-I began by exploring the dataset and identifying the key columns for time series modeling: `SKU` and `Quantity_sold`. Despite `current_level` being constant within an SKU, it varied across SKUs and showed a significant correlation with `Quantity_sold`, making it a useful feature.
-
-Key steps included:
-- Conducting correlation analysis to find cross-SKU similarities and potential leading indicators.
-
 ### Modeling Framework Design Choices and Trade-offs
 
 Given the identified short-term and long-term patterns in the time series data, and in the absence of business constraints to work backward from, I established a modeling framework:
@@ -56,16 +45,6 @@ Among various model configurations, the best Seq2Seq model had:
 - Attention analysis revealed patterns that could be linked to seasonality and the importance of recent steps in predictions.
 - The Seq2Seq model showed potential but requires more tuning and exploration of other baselines like Temporal Convolution Networks and LagLlama.
 
-### Next Steps
-
-If more time were available, I would:
-- Engage with the business team to understand constraints and guide modeling choices.Understanding the business constraints might simplify the tasks .
-- Spend more time to design a better business metric that would reflect trade-offs in over-estimation vs under-estimation (OOS)
-- Fit the log-transformed signal instead of the raw signal
-- Explore seasonalities in depth using Fourier analysis.
-- Conduct extensive hyperparameter tuning on the seq2seq model , and try a transformer based architecture instead of GRUs.
-- Evaluate additional baselines and benchmarks.
-- Unit tests 
 
 ## Project Structure
 
